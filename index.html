@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - Area Skynet Broadband</title>
+<style>
+*{box-sizing:border-box}body{font-family:Arial,sans-serif;margin:0;background:#f3f7ff;color:#1f2937}
+.container{max-width:1200px;margin:30px auto;padding:20px}h1{color:#1264e8}
+.tabs{display:flex;gap:10px;margin-bottom:16px}
+.tabs button{padding:10px 18px;border:0;border-radius:8px;background:#dbe7ff;color:#1264e8;font-weight:700;cursor:pointer}
+.tabs button.active{background:#1264e8;color:#fff}
+.card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 8px 22px rgba(17,24,39,.08);overflow-x:auto}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:12px 10px;border-bottom:1px solid #e5e7eb;vertical-align:top}
+th{background:#eef5ff}.del{background:#dc2626;color:#fff;border:0;padding:8px 12px;border-radius:6px;cursor:pointer;font-weight:600}
+.del:hover{background:#b91c1c}.empty{color:#6b7280;text-align:center;padding:20px}a{color:#1264e8;font-weight:700;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Admin Panel</h1>
+  <div class="tabs">
+    <button id="tab-orders" class="active">Orders</button>
+    <button id="tab-messages">Contact Messages</button>
+  </div>
+  <div class="card"><div id="out"></div></div>
+  <p><a href="/">← Back to Home</a></p>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>
