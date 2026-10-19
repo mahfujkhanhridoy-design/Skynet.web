@@ -1,30 +1,788 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin - Area Skynet Broadband</title>
-<style>
-*{box-sizing:border-box}body{font-family:Arial,sans-serif;margin:0;background:#f3f7ff;color:#1f2937}
-.container{max-width:1200px;margin:30px auto;padding:20px}h1{color:#1264e8}
-.tabs{display:flex;gap:10px;margin-bottom:16px}
-.tabs button{padding:10px 18px;border:0;border-radius:8px;background:#dbe7ff;color:#1264e8;font-weight:700;cursor:pointer}
-.tabs button.active{background:#1264e8;color:#fff}
-.card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 8px 22px rgba(17,24,39,.08);overflow-x:auto}
-table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:12px 10px;border-bottom:1px solid #e5e7eb;vertical-align:top}
-th{background:#eef5ff}.del{background:#dc2626;color:#fff;border:0;padding:8px 12px;border-radius:6px;cursor:pointer;font-weight:600}
-.del:hover{background:#b91c1c}.empty{color:#6b7280;text-align:center;padding:20px}a{color:#1264e8;font-weight:700;text-decoration:none}
-</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Area Skynet Broadband - fast, reliable fiber internet in Sylhet.">
+    <title>Area Skynet Broadband</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-<div class="container">
-  <h1>Admin Panel</h1>
-  <div class="tabs">
-    <button id="tab-orders" class="active">Orders</button>
-    <button id="tab-messages">Contact Messages</button>
-  </div>
-  <div class="card"><div id="out"></div></div>
-  <p><a href="/">← Back to Home</a></p>
-</div>
-<script src="admin.js"></script>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <!-- Logo -->
+
+        <div>
+
+            <a class="brand-link" href="index.html">
+                <img src="pictures/logo.png" alt="My logo">
+                <span>Area Skynet Broadband</span>
+            </a>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#features">Features</a></li>
+
+                <li><a href="#packages">Packages</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+                <li><a href="#pay-bill">Pay Bill</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =========================
+             HOME / HERO SECTION
+        ========================= -->
+
+        <section id="home">
+
+            <div class="hero-content">
+
+
+                <!-- Small Heading -->
+
+                <p class="hero-subtitle">
+
+                    FAST & RELIABLE INTERNET
+
+                </p>
+
+
+
+                <!-- Main Heading -->
+
+                <h1>
+
+                    Experience High Speed
+
+                    <br>
+
+                    <span>Fiber Internet</span>
+
+                </h1>
+
+
+
+                <!-- Description -->
+
+                <p class="hero-description">
+
+                    Enjoy fast, stable and reliable internet
+                    connectivity with high-speed fiber optic
+                    technology.
+
+                </p>
+
+
+
+                <!-- Buttons -->
+
+                <div class="hero-buttons">
+
+                    <a href="#packages" class="primary-btn">
+
+                        View Packages
+
+                    </a>
+
+
+                    <a href="#contact" class="secondary-btn">
+
+                        Contact Us
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FEATURES SECTION
+        ========================= -->
+
+        <section id="features">
+
+
+            <div>
+
+                <h2>Why Choose Us?</h2>
+
+                <p>
+
+                    We provide fast, reliable and affordable internet
+                    services for your home and business.
+
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+
+                <article>
+
+                    <h3>High Speed</h3>
+
+                    <p>
+
+                        Enjoy high-speed internet with a stable connection.
+
+                    </p>
+
+                </article>
+
+
+
+                <article>
+
+                    <h3>Direct Peering</h3>
+
+                    <p>
+
+                        Get better connectivity with direct local peering.
+
+                    </p>
+
+                </article>
+
+
+
+                <article>
+
+                    <h3>24/7 Support</h3>
+
+                    <p>
+
+                        Our support team is available whenever you need help.
+
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PACKAGES SECTION
+        ========================= -->
+
+        <section id="packages" class="packages-section">
+
+
+            <div class="packages-title">
+
+                <span>OUR PACKAGES</span>
+
+                <h2>Monthly Unlimited Packages</h2>
+
+                <p>
+
+                    Choose the perfect internet package according to your needs.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="packages-grid">
+
+
+                <!-- Package 1 -->
+
+                <div class="package-card">
+
+                    <h3>Small Home</h3>
+
+                    <div class="speed">
+
+                        20 <small>Mbps</small>
+
+                    </div>
+
+                    <div class="price">
+
+                        <span>৳</span> 650
+
+                        <small>/Month</small>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>✓ For Light Users</li>
+
+                        <li>✓ 20 Mbps Connection</li>
+
+                        <li>✓ Optical Fiber Connection</li>
+
+                        <li>✓ 99.99% Uptime</li>
+
+                        <li>✓ 4K YouTube & HD Facebook</li>
+
+                        <li>✓ 24/7 Customer Support</li>
+
+                    </ul>
+
+
+                    <a href="order.html?package=small-home" class="purchase-btn">
+
+                        Purchase
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Package 2 -->
+
+                <div class="package-card">
+
+                    <h3>Marshmello</h3>
+
+                    <div class="speed">
+
+                        30 <small>Mbps</small>
+
+                    </div>
+
+                    <div class="price">
+
+                        <span>৳</span> 800
+
+                        <small>/Month</small>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>✓ For Medium Users</li>
+
+                        <li>✓ 30 Mbps Connection</li>
+
+                        <li>✓ Optical Fiber Connection</li>
+
+                        <li>✓ 99.99% Uptime</li>
+
+                        <li>✓ 4K YouTube & HD Facebook</li>
+
+                        <li>✓ 24/7 Customer Support</li>
+
+                    </ul>
+
+
+                    <a href="order.html?package=marshmello" class="purchase-btn">
+
+                        Purchase
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Package 3 -->
+
+                <div class="package-card">
+
+                    <h3>Friend Buzz</h3>
+
+                    <div class="speed">
+
+                        40 <small>Mbps</small>
+
+                    </div>
+
+                    <div class="price">
+
+                        <span>৳</span> 1000
+
+                        <small>/Month</small>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>✓ For Heavy Users</li>
+
+                        <li>✓ 40 Mbps Connection</li>
+
+                        <li>✓ Optical Fiber Connection</li>
+
+                        <li>✓ 99.99% Uptime</li>
+
+                        <li>✓ 4K YouTube & HD Facebook</li>
+
+                        <li>✓ 24/7 Customer Support</li>
+
+                    </ul>
+
+
+                    <a href="order.html?package=friend-buzz" class="purchase-btn">
+
+                        Purchase
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Package 4 -->
+
+                <div class="package-card">
+
+                    <h3>Standard</h3>
+
+                    <div class="speed">
+
+                        60 <small>Mbps</small>
+
+                    </div>
+
+                    <div class="price">
+
+                        <span>৳</span> 1200
+
+                        <small>/Month</small>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>✓ For Extra Heavy Users</li>
+
+                        <li>✓ 60 Mbps Connection</li>
+
+                        <li>✓ Optical Fiber Connection</li>
+
+                        <li>✓ 99.99% Uptime</li>
+
+                        <li>✓ 4K YouTube & HD Facebook</li>
+
+                        <li>✓ 24/7 Customer Support</li>
+
+                    </ul>
+
+
+                    <a href="order.html?package=standard" class="purchase-btn">
+
+                        Purchase
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Package 5 -->
+
+                <div class="package-card">
+
+                    <h3>Premium</h3>
+
+                    <div class="speed">
+
+                        80 <small>Mbps</small>
+
+                    </div>
+
+                    <div class="price">
+
+                        <span>৳</span> 1400
+
+                        <small>/Month</small>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>✓ For Advanced Users</li>
+
+                        <li>✓ 80 Mbps Connection</li>
+
+                        <li>✓ Optical Fiber Connection</li>
+
+                        <li>✓ 99.99% Uptime</li>
+
+                        <li>✓ 4K YouTube & HD Facebook</li>
+
+                        <li>✓ 24/7 Customer Support</li>
+
+                    </ul>
+
+
+                    <a href="order.html?package=premium" class="purchase-btn">
+
+                        Purchase
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Package 6 -->
+
+                <div class="package-card">
+
+                    <h3>Infinity</h3>
+
+                    <div class="speed">
+
+                        100 <small>Mbps</small>
+
+                    </div>
+
+                    <div class="price">
+
+                        <span>৳</span> 1600
+
+                        <small>/Month</small>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>✓ For Professional Users</li>
+
+                        <li>✓ 100 Mbps Connection</li>
+
+                        <li>✓ Optical Fiber Connection</li>
+
+                        <li>✓ 99.99% Uptime</li>
+
+                        <li>✓ 4K YouTube & HD Facebook</li>
+
+                        <li>✓ 24/7 Customer Support</li>
+
+                    </ul>
+
+
+                    <a href="order.html?package=infinity" class="purchase-btn">
+
+                        Purchase
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Corporate Package -->
+
+            <div class="corporate-package">
+
+
+                <div>
+
+                    <h3>For Corporate Connection</h3>
+
+                    <p>
+
+                        Need a customized internet solution for your business?
+
+                    </p>
+
+                </div>
+
+
+                <a href="#contact">
+
+                    Contact Now
+
+                </a>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             SERVICES SECTION
+        ========================= -->
+
+        <section id="services">
+
+
+            <h2>Our Services</h2>
+
+
+            <div>
+
+
+                <article>
+
+                    <h3>Home Internet</h3>
+
+                    <p>
+
+                        Reliable fiber internet for your home.
+
+                    </p>
+
+                </article>
+
+
+
+                <article>
+
+                    <h3>Corporate Internet</h3>
+
+                    <p>
+
+                        High-speed internet solutions for businesses.
+
+                    </p>
+
+                </article>
+
+
+
+                <article>
+
+                    <h3>IPTV</h3>
+
+                    <p>
+
+                        Enjoy entertainment through our digital services.
+
+                    </p>
+
+                </article>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             PAY BILL SECTION
+        ========================= -->
+
+        <section id="pay-bill">
+
+
+            <h2>Pay Your Bill</h2>
+
+
+            <p>
+
+                Pay your internet bill quickly and easily using
+
+            </p>
+
+
+
+            <div class="payment-methods">
+
+
+                <div class="payment-method">
+
+                    <img src="pictures/bkash-logo-png.png" alt="bKash">
+                    <p>
+                        <span>bKash</span>
+                        <strong>+880 1897417026</strong>
+                    </p>
+
+                </div>
+
+
+
+                <div class="payment-method">
+
+                    <img src="pictures/Nagad-Logo.svg" alt="Nagad">
+                    <p>
+                        <span>Nagad</span>
+                        <strong>+880 1897417026</strong>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT SECTION
+        ========================= -->
+
+        <section id="contact">
+
+
+            <h2>Contact Us</h2>
+
+
+            <p>
+
+                Have questions? Get in touch with us.
+
+            </p>
+
+
+
+            <div>
+
+                <p>Phone: +880 1897417026</p>
+
+                <p>Email: areaskynetbroadband@gmail.com</p>
+
+                <p>Address: Kakuarpar, Airport Road, Sylhet</p>
+
+            </div>
+
+
+
+            <form id="contactForm">
+
+
+                <label for="name">Name</label>
+
+                <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="100" required>
+
+
+                <br><br>
+
+
+                <label for="email">Email</label>
+
+                <input type="email" id="email" name="email" placeholder="Enter your email" maxlength="150" required>
+
+
+                <br><br>
+
+
+                <label for="phone">Phone</label>
+
+                <input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX" maxlength="30">
+
+
+                <br><br>
+
+
+                <label for="message">Message</label>
+
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" maxlength="2000"
+                    required></textarea>
+
+
+                <br><br>
+
+
+                <button type="submit">
+
+                    Send Message
+
+                </button>
+
+
+            </form>
+
+
+            <p id="formMessage"></p>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+
+        <p>
+
+            &copy; 2026 Area Skynet Broadband. All Rights Reserved.
+
+        </p>
+
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#features">Features</a>
+
+            <a href="#packages">Packages</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+
 </body>
+
 </html>
